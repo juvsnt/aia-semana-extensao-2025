@@ -97,7 +97,7 @@ const membros = [
         {/* Membros */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">
-            Docentes, Técnicos e Discentes
+            Equipe Organizadora
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {membros.map((membro, index) => (
