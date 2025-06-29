@@ -11,75 +11,175 @@ const ScheduleSection = () => {
     {
       date: "Segunda-feira, 30/06/2025",
       activities: [
-        { time: "08h00", activity: "Credenciamento e Café de Abertura" },
-        { time: "08h30", activity: "Solenidade de Abertura" },
-        { time: "09h30", activity: "Palestra Magna: 'Extensão Universitária: Ponte entre Academia e Sociedade'" },
-        { time: "10h30", activity: "Coffee Break" },
-        { time: "11h00", activity: "Mesa Redonda: 'Transformação Social através da Extensão'" },
-        { time: "12h00", activity: "Intervalo para Almoço" },
-        { time: "14h00", activity: "Oficina: 'Tecnologia e Inclusão Digital'" },
-        { time: "15h30", activity: "Workshop: 'Comunicação Comunitária e Letras'" },
-        { time: "17h00", activity: "Atendimento Jurídico Gratuito (OAB)" }
+        { 
+          time: "07h30", 
+          activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" 
+        },
+        { time: "08h00", activity: "Jogos que Conectam" },
+        { time: "08h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber" },
+        { time: "08h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "08h00", activity: "Secretaria de Saúde - Regularização de Cartão vacinação; Tipagem Sanguínea" },
+        { time: "08h00", activity: "CRAS - Atualização do Cadastro Único, Palestras" },
+        { time: "08h00", activity: "SINE - Cadastro gov.br   Orientação para o Mercado de Trabalho; Vagas de emprego" },
+        { time: "08h30", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber" },
+        { time: "09h00", activity: "Varal Solidário; Unemat na comunidade" },
+        { time: "09h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber" },
+        { time: "09h30", activity: "Sessão Cinema" },
+        { time: "09h30", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber" },
+        { time: "10h00 - 17h30", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber (continuação)" },
+        { time: "13h00", activity: "Libras: Interação com jogos pedagógicos" },
+        { time: "13h00", activity: "Orientação Jurídica - OAB Alto Araguaia" },
+        { time: "13h30", activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" },
+        { time: "14h00", activity: "Reativação da Quadra de Vôlei de Areia" },
+        { time: "15h30", activity: "Sessão Cinema" },
+        { time: "18h00", activity: "Game Room" },
+        { time: "18h00", activity: "Semana Musical na UNEMAT" },
+        { time: "19h00", activity: "Guia Completo para Iniciantes no Poker" },
+        { time: "19h00", activity: "Jogos Pedagógicos" },
+        { time: "19h00", activity: "ESTILO DE VIDA: Práticas alimentares saudáveis e eliminação de vícios" },
+        { time: "20h00", activity: "Conecte-se ao Futuro: Carreiras, LinkedIn e o Mercado de Trabalho Tecnológico" },
+        { time: "21h00", activity: "Sessão Cinema" }
       ]
     },
     {
       date: "Terça-feira, 01/07/2025", 
       activities: [
-        { time: "08h00", activity: "Recepção dos Participantes" },
-        { time: "08h30", activity: "Caminhão do MT Ciências - Atividades Interativas" },
-        { time: "10h00", activity: "Emissão de RG Digital (POLITEC-MT)" },
-        { time: "10h30", activity: "Atualização de Carteira de Vacinação" },
-        { time: "11h00", activity: "Tipagem Sanguínea (Secretaria Municipal de Saúde)" },
-        { time: "12h00", activity: "Intervalo para Almoço" },
-        { time: "14h00", activity: "Orientações SINE - Portal gov.br e Mercado de Trabalho" },
-        { time: "15h00", activity: "Curso: 'Desenvolvimento de Software para Iniciantes'" },
-        { time: "16h30", activity: "Atendimentos CRAS - Orientações Sociais" },
-        { time: "17h30", activity: "Encerramento das Atividades do Dia" }
+        { 
+          time: "07h30", 
+          activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" 
+        },
+        { time: "07h30", activity: "Oficina: Foguetes de garrafa PET" },
+        { time: "08h00", activity: "Jogos que Conectam" },
+        { time: "08h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber" },
+        { time: "08h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "08h00", activity: "Oficina: Aprendendo a pensar com a Sociologia" },
+        { time: "08h00", activity: "Secretaria de Saúde - Regularização de Cartão vacinação; Tipagem Sanguínea" },
+        { time: "08h00", activity: "Contando um conto" },
+        { time: "08h00", activity: "CRAS - Atualização do Cadastro Único, Palestras" },
+        { time: "08h00", activity: "UAB - Exposição Iconográfica" },
+        { time: "08h00", activity: "SINE - Cadastro gov.br   Orientação para o Mercado de Trabalho; Vagas de emprego" },
+        { time: "08h30 - 17h30", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber (continuação)" },
+        { time: "09h00", activity: "Discentes de Letras da UNEMAT e do Ensino Médio em diálogo: resolução do caderno Linguagens, Códigos e suas Tecnologias do ENEM 2024" },
+        { time: "09h30", activity: "Sessão Cinema" },
+        { time: "10h00", activity: "Educando para um trânsito educado" },
+        { time: "13h00", activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" },
+        { time: "13h00", activity: "Viajando no Mundo Da Leitura" },
+        { time: "13h30", activity: "Oficina: Foguetes de garrafa PET" },
+        { time: "14h00", activity: "Literatura Infantil e Jogos Educativos com Material Reciclável" },
+        { time: "14h00", activity: "Reativação da Quadra de Vôlei de Areia" },
+        { time: "14h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "14h00", activity: "Contos na Educação Infantil" },
+        { time: "18h00", activity: "Game Room" },
+        { time: "18h00", activity: "Semana Musical na UNEMAT" },
+        { time: "19h00", activity: "Guia Completo para Iniciantes no Poker" },
+        { time: "19h00", activity: "Jogos Pedagógicos" },
+        { time: "19h00", activity: "ESTILO DE VIDA: Práticas alimentares saudáveis e eliminação de vícios" },
+        { time: "20h00", activity: "Conecte-se ao Futuro: Carreiras, LinkedIn e o Mercado de Trabalho Tecnológico" },
+        { time: "21h00", activity: "Sessão Cinema" }
       ]
     },
     {
       date: "Quarta-feira, 02/07/2025",
       activities: [
-        { time: "08h00", activity: "Abertura do Dia" },
-        { time: "08h30", activity: "Workshop: 'Literatura e Identidade Regional'" },
-        { time: "10h00", activity: "Circuito Itinerante da Ciência de Mato Grosso" },
-        { time: "10h30", activity: "Coffee Break" },
-        { time: "11h00", activity: "Oficina: 'Programação para Jovens'" },
-        { time: "12h00", activity: "Intervalo para Almoço" },
-        { time: "14h00", activity: "Mesa Redonda: 'Direitos Humanos e Cidadania'" },
-        { time: "15h30", activity: "Curso: 'Produção Textual e Comunicação'" },
-        { time: "17h00", activity: "Atendimento Jurídico Gratuito (OAB)" },
-        { time: "18h00", activity: "Atividades Culturais" }
+        { 
+          time: "07h30", 
+          activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" 
+        },
+        { time: "08h00", activity: "Jogos que Conectam" },
+        { time: "08h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber" },
+        { time: "08h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "08h00", activity: "Secretaria de Saúde - Regularização de Cartão vacinação; Tipagem Sanguínea" },
+        { time: "08h00", activity: "CRAS - Atualização do Cadastro Único, Palestras" },
+        { time: "08h00", activity: "UAB - Exposição Iconográfica" },
+        { time: "08h00", activity: "SINE - Cadastro gov.br   Orientação para o Mercado de Trabalho; Vagas de emprego" },
+        { time: "08h30 - 17h30", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber (continuação)" },
+        { time: "09h00", activity: "Discentes de Letras da UNEMAT e do Ensino Médio em diálogo: resolução do caderno Linguagens, Códigos e suas Tecnologias do ENEM 2024" },
+        { time: "09h30", activity: "Sessão Cinema" },
+        { time: "13h00", activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" },
+        { time: "13h30", activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" },
+        { time: "14h00", activity: "Literatura Infantil e Jogos Educativos com Material Reciclável" },
+        { time: "14h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "14h00", activity: "Contos na Educação Infantil" },
+        { time: "15h30", activity: "Sessão Cinema" },
+        { time: "18h00", activity: "Game Room" },
+        { time: "18h00", activity: "Semana Musical na UNEMAT" },
+        { time: "19h00", activity: "Guia Completo para Iniciantes no Poker" },
+        { time: "19h00", activity: "Jogos Pedagógicos" },
+        { time: "19h00", activity: "ESTILO DE VIDA: Práticas alimentares saudáveis e eliminação de vícios" },
+        { time: "20h00", activity: "Conecte-se ao Futuro: Carreiras, LinkedIn e o Mercado de Trabalho Tecnológico" },
+        { time: "21h00", activity: "Sessão Cinema" }
       ]
     },
     {
       date: "Quinta-feira, 03/07/2025",
       activities: [
-        { time: "08h00", activity: "Recepção Matinal" },
-        { time: "08h30", activity: "Palestra: 'Inovação Tecnológica e Desenvolvimento Regional'" },
-        { time: "10h00", activity: "Continuação - Emissão de RG Digital" },
-        { time: "10h30", activity: "Coffee Break" },
-        { time: "11h00", activity: "Workshop: 'Análise de Dados e Sociedade'" },
-        { time: "12h00", activity: "Intervalo para Almoço" },
-        { time: "14h00", activity: "Curso: 'Redação Jurídica e Peticionamento'" },
-        { time: "15h30", activity: "Oficina: 'Criação de Conteúdo Digital'" },
-        { time: "16h30", activity: "Atendimentos CRAS - Orientações Sociais" },
-        { time: "17h30", activity: "Sessão de Networking" }
+        { 
+          time: "07h30", 
+          activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" 
+        },
+        { time: "08h00", activity: "Jogos que Conectam" },
+        { time: "08h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber" },
+        { time: "08h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "08h00", activity: "Secretaria de Saúde - Regularização de Cartão vacinação; Tipagem Sanguínea" },
+        { time: "08h00", activity: "CRAS - Atualização do Cadastro Único, Palestras" },
+        { time: "08h00", activity: "UAB - Exposição Iconográfica" },
+        { time: "08h00", activity: "SINE - Cadastro gov.br   Orientação para o Mercado de Trabalho; Vagas de emprego" },
+        { time: "08h30 - 17h30", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber (continuação)" },
+        { time: "09h00", activity: "Discentes de Letras da UNEMAT e do Ensino Médio em diálogo: resolução do caderno Linguagens, Códigos e suas Tecnologias do ENEM 2024" },
+        { time: "09h30", activity: "Sessão Cinema" },
+        { time: "13h00", activity: "Secretaria de Saúde - Regularização de Cartão vacinação; Tipagem Sanguínea" },
+        { time: "13h00", activity: "CRAS - Atualização do Cadastro Único, Palestras" },
+        { time: "13h00", activity: "UAB - Exposição Iconográfica" },
+        { time: "13h00", activity: "SINE - Cadastro gov.br   Orientação para o Mercado de Trabalho; Vagas de emprego" },
+        { time: "13h30", activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" },
+        { time: "14h00", activity: "Literatura Infantil e Jogos Educativos com Material Reciclável" },
+        { time: "14h00", activity: "Reativação da Quadra de Vôlei de Areia" },
+        { time: "14h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "14h00", activity: "Contos na Educação Infantil" },
+        { time: "15h30", activity: "Sessão Cinema" },
+        { time: "18h00", activity: "Game Room" },
+        { time: "18h00", activity: "Semana Musical na UNEMAT" },
+        { time: "19h00", activity: "Guia Completo para Iniciantes no Poker" },
+        { time: "19h00", activity: "Jogos Pedagógicos" },
+        { time: "19h00", activity: "ESTILO DE VIDA: Práticas alimentares saudáveis e eliminação de vícios" },
+        { time: "20h00", activity: "Conecte-se ao Futuro: Carreiras, LinkedIn e o Mercado de Trabalho Tecnológico" },
+        { time: "21h00", activity: "Sessão Cinema" }
       ]
     },
     {
       date: "Sexta-feira, 04/07/2025",
       activities: [
-        { time: "08h00", activity: "Último Dia - Recepção" },
-        { time: "08h30", activity: "Mesa Redonda: 'Futuro da Extensão Universitária'" },
-        { time: "10h00", activity: "Apresentação de Resultados dos Cursos e Oficinas" },
-        { time: "10h30", activity: "Coffee Break" },
-        { time: "11h00", activity: "Finalização dos Atendimentos dos Parceiros" },
-        { time: "12h00", activity: "Intervalo para Almoço" },
-        { time: "14h00", activity: "Avaliação do Evento - Feedback dos Participantes" },
-        { time: "15h00", activity: "Entrega de Certificados" },
-        { time: "16h00", activity: "Solenidade de Encerramento" },
-        { time: "17h00", activity: "Confraternização Final" }
+        { 
+          time: "07h30", 
+          activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)" 
+        },
+        { time: "07h30", activity: "Oficina: Robótica Criativa" },
+        { time: "08h00", activity: "Jogos que Conectam" },
+        { time: "08h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber" },
+        { time: "08h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "08h00", activity: "Secretaria de Saúde - Regularização de Cartão vacinação; Tipagem Sanguínea" },
+        { time: "08h00", activity: "CRAS - Atualização do Cadastro Único, Palestras" },
+        { time: "08h00", activity: "UAB - Exposição Iconográfica" },
+        { time: "08h00", activity: "SINE - Cadastro gov.br   Orientação para o Mercado de Trabalho; Vagas de emprego" },
+        { time: "08h30 - 17h30", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber (continuação)" },
+        { time: "09h00", activity: "Discentes de Letras da UNEMAT e do Ensino Médio em diálogo: resolução do caderno Linguagens, Códigos e suas Tecnologias do ENEM 2024" },
+        { time: "09h30", activity: "Sessão Cinema" },
+        { time: "13h00", activity: "Secretaria de Saúde - Regularização de Cartão vacinação; Tipagem Sanguínea" },
+        { time: "13h00", activity: "CRAS - Atualização do Cadastro Único, Palestras" },
+        { time: "13h00", activity: "UAB - Exposição Iconográfica" },
+        { time: "13h00", activity: "SINE - Cadastro gov.br   Orientação para o Mercado de Trabalho; Vagas de emprego" },
+        { time: "13h30", activity: "Oficina: Robótica Criativa" },
+        { time: "14h00", activity: "Literatura Infantil e Jogos Educativos com Material Reciclável" },
+        { time: "14h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas" },
+        { time: "14h00", activity: "Contos na Educação Infantil" },
+        { time: "15h30", activity: "Sessão Cinema" },
+        { time: "18h00", activity: "Game Room" },
+        { time: "18h00", activity: "Semana Musical na UNEMAT" },
+        { time: "19h00", activity: "Guia Completo para Iniciantes no Poker" },
+        { time: "19h00", activity: "Jogos Pedagógicos" },
+        { time: "19h00", activity: "ESTILO DE VIDA: Práticas alimentares saudáveis e eliminação de vícios" },
+        { time: "20h00", activity: "Conecte-se ao Futuro: Carreiras, LinkedIn e o Mercado de Trabalho Tecnológico" },
+        { time: "21h00", activity: "Sessão Cinema" }
       ]
     }
   ];
@@ -88,11 +188,11 @@ const ScheduleSection = () => {
     <section id="programacao" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">Programação Completa</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">Programação Oficial</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-unemat-blue to-unemat-green mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Cinco dias de atividades extensionistas com cursos, oficinas, palestras e atendimentos 
-            à comunidade, promovendo conhecimento e transformação social.
+            Cinco dias intensos de atividades extensionistas com cursos, oficinas, palestras, 
+            atendimentos à comunidade e ações interativas que promovem conhecimento e transformação social.
           </p>
         </div>
 
@@ -116,7 +216,7 @@ const ScheduleSection = () => {
         </div>
 
         {/* Selected Day Schedule */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Card className="mb-8">
             <CardHeader className="bg-gradient-to-r from-unemat-blue to-unemat-green text-white">
               <CardTitle className="flex items-center space-x-3">
@@ -129,15 +229,15 @@ const ScheduleSection = () => {
                 {schedule[selectedDay].activities.map((item, index) => (
                   <div 
                     key={index} 
-                    className="p-6 hover:bg-gray-50 transition-colors"
+                    className="p-4 hover:bg-gray-50 transition-colors"
                   >
-                    <div className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
-                      <div className="flex items-center space-x-2 text-unemat-blue font-semibold min-w-[80px]">
+                    <div className="flex flex-col sm:flex-row sm:items-start space-y-2 sm:space-y-0 sm:space-x-4">
+                      <div className="flex items-center space-x-2 text-unemat-blue font-semibold min-w-[100px]">
                         <Clock className="w-4 h-4" />
-                        <span>{item.time}</span>
+                        <span className="text-sm">{item.time}</span>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-800 font-medium">{item.activity}</p>
+                        <p className="text-gray-800 text-sm leading-relaxed">{item.activity}</p>
                       </div>
                     </div>
                   </div>
@@ -154,6 +254,9 @@ const ScheduleSection = () => {
                 <span className="font-medium">
                   Todas as atividades acontecem no Campus de Alto Araguaia - UNEMAT
                 </span>
+              </div>
+              <div className="text-center mt-2 text-sm text-gray-600">
+                <p>Muitas atividades acontecem simultaneamente em diferentes espaços do campus</p>
               </div>
             </CardContent>
           </Card>
