@@ -16,7 +16,7 @@ const membros = [
     { nome: "Docentes - Alto Araguaia e Rondonópolis", categoria: "DOCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "FALECT" },
     
     // TÉCNICOS
-    { nome: "Técnicos Administrativos", categoria: "TÉCNICO", funcao: "Câmpus de Alto Araguaia", unidade: "Administração" },
+    { nome: "Técnicos Administrativos", categoria: "SERVIDOR", funcao: "Câmpus de Alto Araguaia", unidade: "Administração" },
     
     // DISCENTES
     { nome: "Discentes - Alto Araguaia e Rondonópolis", categoria: "DISCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "FALECT" },
