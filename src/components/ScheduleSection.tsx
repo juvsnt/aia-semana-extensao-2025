@@ -39,7 +39,6 @@ const ScheduleSection = () => {
       date: "Terça-feira, 01/07/2025",
       activities: [
         { time: "07h30", activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)", type: "fixo" },
-        { time: "07h30", activity: "Oficina: Foguetes de garrafa PET", type: "oficina" },
         { time: "08h00", activity: "Jogos que Conectam", type: "oficina" },
         { time: "08h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber", type: "palestra" },
         { time: "08h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas", type: "cultural" },
@@ -70,6 +69,8 @@ const ScheduleSection = () => {
       ]
     }
     { time: "07h30", activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)", type: "fixo" },
+    { time: "07h30", activity: "Oficina: Foguetes de garrafa PET", type: "oficina" },
+    { time: "07h30", activity: "Oficina: Robótica Criativa", type: "oficina" },
       { time: "08h00", activity: "Jogos que Conectam", type: "oficina" },
       { time: "08h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber", type: "palestra" },
       { time: "08h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas", type: "cultural" },
@@ -129,7 +130,6 @@ const ScheduleSection = () => {
       date: "Sexta-feira, 04/07/2025",
       activities: [
         { time: "07h30", activity: "Carreta do MT Ciências - Planetário Digital, Experimentos Externos, Ambiente interativo (Jogos e Óculos VR)", type: "fixo" },
-        { time: "07h30", activity: "Oficina: Robótica Criativa", type: "oficina" },
         { time: "08h00", activity: "Jogos que Conectam", type: "oficina" },
         { time: "08h00", activity: "IA: Do Zero ao Wow! Pergunte Tudo O Que Você Quer Saber", type: "palestra" },
         { time: "08h00", activity: "ARTES CÊNICAS: A dramatização da história do chapeuzinho vermelho e a aplicação das lições práticas", type: "cultural" },
