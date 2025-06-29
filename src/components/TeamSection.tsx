@@ -11,29 +11,16 @@ const TeamSection = () => {
     funcao: "Coordenador"
   };
 
-  const membros = [
-    // Docentes do Câmpus de Alto Araguaia
-    { nome: "Docente - Curso de Ciência da Computação", categoria: "DOCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Ciência da Computação" },
-    { nome: "Docente - Curso de Letras", categoria: "DOCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Letras" },
-    { nome: "Docente - Coordenação Pedagógica", categoria: "DOCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Coordenação" },
+const membros = [
+    // DOCENTES
+    { nome: "Docentes - Alto Araguaia e Rondonópolis", categoria: "DOCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "FALECT" },
     
-    // Docentes do Núcleo Pedagógico de Rondonópolis
-    { nome: "Docente - Curso de Direito", categoria: "DOCENTE", funcao: "Núcleo Pedagógico de Rondonópolis", unidade: "Direito" },
-    { nome: "Docente - Apoio Pedagógico", categoria: "DOCENTE", funcao: "Núcleo Pedagógico de Rondonópolis", unidade: "Pedagogia" },
+    // TÉCNICOS
+    { nome: "Técnicos Administrativos", categoria: "TÉCNICO", funcao: "Câmpus de Alto Araguaia", unidade: "Administração" },
     
-    // Técnicos do Câmpus de Alto Araguaia
-    { nome: "Técnico Administrativo", categoria: "SERVIDOR", funcao: "Câmpus de Alto Araguaia", unidade: "Administração" },
-    { nome: "Técnico em Informática", categoria: "SERVIDOR", funcao: "Câmpus de Alto Araguaia", unidade: "Tecnologia" },
-    { nome: "Técnico de Laboratório", categoria: "SERVIDOR", funcao: "Câmpus de Alto Araguaia", unidade: "Laboratório" },
-    
-    // Discentes do Câmpus de Alto Araguaia
-    { nome: "Discente - Ciência da Computação", categoria: "DISCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Computação" },
-    { nome: "Discente - Letras", categoria: "DISCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Letras" },
-    { nome: "Discente - Monitor de Extensão", categoria: "DISCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Extensão" },
-    
-    // Discentes do Núcleo Pedagógico de Rondonópolis
-    { nome: "Discente - Direito", categoria: "DISCENTE", funcao: "Núcleo Pedagógico de Rondonópolis", unidade: "Direito" }
-  ];
+    // DISCENTES
+    { nome: "Discentes - Alto Araguaia e Rondonópolis", categoria: "DISCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "FALECT" },
+];
 
   const getCategoryColor = (categoria: string) => {
     switch (categoria) {
