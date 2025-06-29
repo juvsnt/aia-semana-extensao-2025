@@ -22,8 +22,12 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-unemat-blue to-unemat-green rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">U</span>
+            <div className="w-12 h-8">
+              <img 
+                src="/lovable-uploads/bb90fcdf-2e9e-4e32-ade3-8c0559b4e834.png" 
+                alt="UNEMAT Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="hidden md:block">
               <h1 className="text-lg font-bold text-gray-800">I Semana de Extensão UNEMAT</h1>

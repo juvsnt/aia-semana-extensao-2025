@@ -1,177 +1,154 @@
 import React from 'react';
-import { Target, Users, Award, Globe } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Target, Users, Heart, Award } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
 
 const AboutSection = () => {
-  const ods = [
-    "Erradicação da Pobreza",
-    "Saúde e Bem-Estar", 
-    "Educação de Qualidade",
-    "Trabalho Decente e Crescimento Econômico",
-    "Indústria, Inovação e Infraestrutura",
-    "Redução das Desigualdades",
-    "Cidades e Comunidades Sustentáveis",
-    "Paz, Justiça e Instituições Eficazes",
-    "Parcerias e Meios de Implementação"
-  ];
-
-  const unidades = [
-    {
-      tipo: "Proponente",
-      nome: "Faculdade de Letras, Ciências Sociais e Tecnológicas - AIA / UNEMAT"
-    },
-    {
-      tipo: "Envolvidas",
-      nomes: [
-        "Coordenação do Curso de Ciência da Computação - AIA / UNEMAT",
-        "Coordenação do Curso de Letras - AIA / UNEMAT", 
-        "Coordenação do Curso de Direito - Parceladas AIA - Rondonópolis / UNEMAT",
-        "Diretoria de Unidade Regionalizada Administrativa - AIA / UNEMAT"
-      ]
-    }
-  ];
-
   return (
-    <section id="sobre" className="py-20 bg-gray-50">
+    <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">Sobre o Evento</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-unemat-blue to-unemat-green mx-auto mb-8"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        {/* Campus Image Section */}
+        <div className="mb-16 animate-fade-in">
+          <div className="max-w-4xl mx-auto">
+            <img 
+              src="/lovable-uploads/1566111f-58c7-4c42-92e8-a44006155ee6.png" 
+              alt="Vista aérea do Campus UNEMAT Alto Araguaia"
+              className="w-full h-80 object-cover rounded-xl shadow-lg"
+            />
+            <p className="text-center text-gray-600 mt-4 text-sm">
+              Campus UNEMAT Alto Araguaia - Local da I Semana de Extensão Universitária
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-slide-in">
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Target className="w-6 h-6 text-unemat-blue" />
-                  <span>Objetivos e Propósito</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-700 leading-relaxed">
-                  A extensão tem o papel de conectar a universidade à
-                  comunidade! Pensando nisso, a UNEMAT preparou uma
-                  programação CHEIA de cursos, palestras atividades pra
-                  mostrar pra você as coisas incríveis que acontecem no
-                  ambiente universitário!
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  Durante o evento, serão realizadas atividades extensionistas nas quais os acadêmicos 
-                  serão protagonistas na promoção do conhecimento em benefício da sociedade, por meio 
-                  de cursos, oficinas e eventos com temáticas voltadas às áreas de atuação dos cursos 
-                  ofertados no câmpus.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  A iniciativa está em consonância com a política de creditação da extensão universitária 
-                  e tem como objetivo oportunizar ações que impactem socialmente, contribuindo para a 
-                  formação cidadã e o desenvolvimento regional.
-                </p>
-              </CardContent>
-            </Card>
+            <h3 className="text-3xl font-bold text-gray-800 mb-6">Objetivos e Propósito</h3>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              A extensão tem o papel de conectar a universidade à
+              comunidade! Pensando nisso, a UNEMAT preparou uma
+              programação CHEIA de cursos, palestras atividades pra
+              mostrar pra você as coisas incríveis que acontecem no
+              ambiente universitário!
+            </p>
+            <ul className="list-disc list-inside text-gray-600">
+              <li className="mb-2">
+                Promover a integração entre a UNEMAT e a comunidade
+                externa.
+              </li>
+              <li className="mb-2">
+                Oferecer atividades de extensão que contribuam para o
+                desenvolvimento social e econômico da região.
+              </li>
+              <li className="mb-2">
+                Estimular a participação da comunidade acadêmica em ações
+                de extensão.
+              </li>
+              <li>
+                Divulgar os conhecimentos e as tecnologias produzidas na
+                universidade.
+              </li>
+            </ul>
           </div>
 
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Award className="w-6 h-6 text-unemat-green" />
-                  <span>Informações Técnicas</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <p className="font-semibold text-gray-800">Código:</p>
-                    <p className="text-gray-600">EV376-2025</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
+            <Card className="h-full hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-unemat-blue to-unemat-green rounded-full flex items-center justify-center">
+                    <Target className="w-8 h-8 text-white" />
                   </div>
-                  <div>
-                    <p className="font-semibold text-gray-800">Tipo:</p>
-                    <p className="text-gray-600">Evento (Feira)</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-800">Área Principal:</p>
-                    <p className="text-gray-600">Educação</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-800">Situação:</p>
-                    <p className="text-green-600 font-semibold">Em Execução</p>
-                  </div>
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-800">Financiamento:</p>
-                  <p className="text-gray-600">Ação Auto-Financiada</p>
+                  <h3 className="font-bold text-lg text-gray-800">
+                    Foco Comunitário
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Atividades pensadas para atender as necessidades da
+                    comunidade.
+                  </p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Users className="w-6 h-6 text-unemat-blue" />
-                  <span>Público-Alvo</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-4 bg-unemat-blue/10 rounded-lg">
-                    <p className="text-2xl font-bold text-unemat-blue">5.000</p>
-                    <p className="text-gray-700">Comunidade</p>
+            <Card className="h-full hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-unemat-blue to-unemat-green rounded-full flex items-center justify-center">
+                    <Users className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-center p-4 bg-unemat-green/10 rounded-lg">
-                    <p className="text-2xl font-bold text-unemat-green">500</p>
-                    <p className="text-gray-700">Discentes</p>
+                  <h3 className="font-bold text-lg text-gray-800">
+                    Público Envolvido
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Alunos, professores e a comunidade em geral
+                    participando ativamente.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-unemat-blue to-unemat-green rounded-full flex items-center justify-center">
+                    <Heart className="w-8 h-8 text-white" />
                   </div>
+                  <h3 className="font-bold text-lg text-gray-800">
+                    Impacto Social
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Transformando realidades e construindo um futuro melhor
+                    para todos.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-unemat-blue to-unemat-green rounded-full flex items-center justify-center">
+                    <Award className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="font-bold text-lg text-gray-800">
+                    Certificação
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Certificação de horas complementares para todos os
+                    participantes.
+                  </p>
                 </div>
               </CardContent>
             </Card>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center space-x-3">
-                <Globe className="w-6 h-6 text-unemat-green" />
-                <span>Objetivos de Desenvolvimento Sustentável (ODS)</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 gap-2">
-                {ods.map((objetivo, index) => (
-                  <div key={index} className="flex items-center space-x-2 p-2 bg-gray-50 rounded">
-                    <div className="w-2 h-2 bg-unemat-green rounded-full"></div>
-                    <span className="text-sm text-gray-700">{objetivo}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+        {/* Impact Metrics Section */}
+        <div className="text-center mb-16 animate-fade-in">
+          <h3 className="text-3xl font-bold text-gray-800 mb-6">
+            Métricas de Impacto
+          </h3>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            A I Semana de Extensão Universitária visa alcançar números
+            expressivos, impactando positivamente a comunidade e
+            consolidando o papel da UNEMAT como agente de transformação
+            social.
+          </p>
+        </div>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Unidades Envolvidas</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div>
-                <h4 className="font-semibold text-unemat-blue mb-3">Unidade Proponente</h4>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  {unidades[0].nome}
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-unemat-blue mb-3">Unidades Envolvidas</h4>
-                <ul className="space-y-2">
-                  {unidades[1].nomes.map((nome, index) => (
-                    <li key={index} className="text-gray-700 text-sm leading-relaxed flex items-start space-x-2">
-                      <div className="w-1.5 h-1.5 bg-unemat-green rounded-full mt-2 flex-shrink-0"></div>
-                      <span>{nome}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
+        {/* Call to Action Section */}
+        <div className="text-center animate-fade-in">
+          <h3 className="text-3xl font-bold text-gray-800 mb-6">
+            Junte-se a Nós!
+          </h3>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+            Participe da I Semana de Extensão Universitária e faça parte
+            dessa experiência transformadora.
+          </p>
+          {/* You can add a button here to register or learn more */}
         </div>
       </div>
     </section>

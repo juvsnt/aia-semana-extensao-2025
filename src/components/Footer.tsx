@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, MapPin, Calendar, Award } from 'lucide-react';
 
@@ -10,8 +9,12 @@ const Footer = () => {
           {/* Logo and Event Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-4 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-unemat-blue to-unemat-green rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">U</span>
+              <div className="w-16 h-12">
+                <img 
+                  src="/lovable-uploads/bb90fcdf-2e9e-4e32-ade3-8c0559b4e834.png" 
+                  alt="UNEMAT Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold">I Semana de Extensão UNEMAT</h3>
