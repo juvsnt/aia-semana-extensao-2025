@@ -12,23 +12,27 @@ const TeamSection = () => {
   };
 
   const membros = [
-    { nome: "Professora Dra. Maria Silva", categoria: "DOCENTE", funcao: "Vice-Coordenadora" },
-    { nome: "João Santos", categoria: "SERVIDOR", funcao: "Coordenador Administrativo" },
-    { nome: "Ana Paula Costa", categoria: "DOCENTE", funcao: "Coordenadora Pedagógica" },
-    { nome: "Carlos Roberto Lima", categoria: "SERVIDOR", funcao: "Apoio Técnico" },
-    { nome: "Mariana Oliveira", categoria: "DISCENTE", funcao: "Monitora de Extensão" },
-    { nome: "Pedro Henrique", categoria: "DISCENTE", funcao: "Monitor de Tecnologia" },
-    { nome: "Laura Fernandes", categoria: "DISCENTE", funcao: "Monitora de Comunicação" },
-    { nome: "Rafael Souza", categoria: "DISCENTE", funcao: "Monitor de Eventos" }
-  ];
-
-  const colaboradores = [
-    { nome: "Dra. Sandra Ribeiro", categoria: "DOCENTE", funcao: "Palestrante Convidada" },
-    { nome: "Prof. Eduardo Martins", categoria: "DOCENTE", funcao: "Facilitador de Workshop" },
-    { nome: "Juliana Torres", categoria: "SERVIDOR", funcao: "Apoio Logístico" },
-    { nome: "André Luiz", categoria: "DISCENTE", funcao: "Voluntário" },
-    { nome: "Camila Rodrigues", categoria: "DISCENTE", funcao: "Voluntária" },
-    { nome: "Fernando Silva", categoria: "SERVIDOR", funcao: "Suporte Técnico" }
+    // Docentes do Câmpus de Alto Araguaia
+    { nome: "Docente - Curso de Ciência da Computação", categoria: "DOCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Ciência da Computação" },
+    { nome: "Docente - Curso de Letras", categoria: "DOCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Letras" },
+    { nome: "Docente - Coordenação Pedagógica", categoria: "DOCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Coordenação" },
+    
+    // Docentes do Núcleo Pedagógico de Rondonópolis
+    { nome: "Docente - Curso de Direito", categoria: "DOCENTE", funcao: "Núcleo Pedagógico de Rondonópolis", unidade: "Direito" },
+    { nome: "Docente - Apoio Pedagógico", categoria: "DOCENTE", funcao: "Núcleo Pedagógico de Rondonópolis", unidade: "Pedagogia" },
+    
+    // Técnicos do Câmpus de Alto Araguaia
+    { nome: "Técnico Administrativo", categoria: "SERVIDOR", funcao: "Câmpus de Alto Araguaia", unidade: "Administração" },
+    { nome: "Técnico em Informática", categoria: "SERVIDOR", funcao: "Câmpus de Alto Araguaia", unidade: "Tecnologia" },
+    { nome: "Técnico de Laboratório", categoria: "SERVIDOR", funcao: "Câmpus de Alto Araguaia", unidade: "Laboratório" },
+    
+    // Discentes do Câmpus de Alto Araguaia
+    { nome: "Discente - Ciência da Computação", categoria: "DISCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Computação" },
+    { nome: "Discente - Letras", categoria: "DISCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Letras" },
+    { nome: "Discente - Monitor de Extensão", categoria: "DISCENTE", funcao: "Câmpus de Alto Araguaia", unidade: "Extensão" },
+    
+    // Discentes do Núcleo Pedagógico de Rondonópolis
+    { nome: "Discente - Direito", categoria: "DISCENTE", funcao: "Núcleo Pedagógico de Rondonópolis", unidade: "Direito" }
   ];
 
   const getCategoryColor = (categoria: string) => {
@@ -67,6 +71,9 @@ const TeamSection = () => {
               {member.categoria}
             </span>
             <p className="text-sm text-gray-600 font-medium">{member.funcao}</p>
+            {member.unidade && (
+              <p className="text-xs text-gray-500">{member.unidade}</p>
+            )}
           </div>
           
           {isCoordinator && (
@@ -87,8 +94,8 @@ const TeamSection = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-6">Nossa Equipe</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-unemat-blue to-unemat-green mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Conheça a equipe dedicada que está trabalhando para tornar a I Semana de Extensão 
-            uma experiência transformadora para toda a comunidade.
+            Conheça a equipe do Câmpus de Alto Araguaia e Núcleo Pedagógico de Rondonópolis 
+            que está trabalhando para tornar a I Semana de Extensão uma experiência transformadora.
           </p>
         </div>
 
@@ -102,20 +109,12 @@ const TeamSection = () => {
 
         {/* Membros */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Membros da Equipe</h3>
+          <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">
+            Docentes, Técnicos e Discentes
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {membros.map((membro, index) => (
               <TeamMemberCard key={index} member={membro} />
-            ))}
-          </div>
-        </div>
-
-        {/* Colaboradores */}
-        <div>
-          <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Colaboradores</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {colaboradores.map((colaborador, index) => (
-              <TeamMemberCard key={index} member={colaborador} />
             ))}
           </div>
         </div>
