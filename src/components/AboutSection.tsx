@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Target, Users, Award, Globe } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -51,9 +50,11 @@ const AboutSection = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Esta é a institucionalização da Primeira Semana de Extensão do Câmpus Universitário 
-                  de Alto Araguaia – UNEMAT, uma ação integrada entre cursos e projetos voltada ao 
-                  fortalecimento do vínculo entre a universidade e a comunidade externa.
+                  A extensão tem o papel de conectar a universidade à
+                  comunidade! Pensando nisso, a UNEMAT preparou uma
+                  programação CHEIA de cursos, palestras atividades pra
+                  mostrar pra você as coisas incríveis que acontecem no
+                  ambiente universitário!
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Durante o evento, serão realizadas atividades extensionistas nas quais os acadêmicos 
